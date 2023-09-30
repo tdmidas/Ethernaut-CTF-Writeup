@@ -7,7 +7,8 @@ Trước khi vào làm các challenge ta cần một số thứ như sau:
 - Sepolia network để lấy vài test ether: https://sepoliafaucet.com/
 - Remix IDE (IDE để viết contract, compile, deploy,...): https://remix.ethereum.org/
 
-# Level 0: Hello Ethernaut
+# Level 0: Hello Ethernaut 
+## ★☆☆☆☆
 Chúng ta sẽ bắt đầu với một warmup challenge trước
 ## Solution
 
