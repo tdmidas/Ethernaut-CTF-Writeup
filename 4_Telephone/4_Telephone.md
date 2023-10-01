@@ -27,13 +27,11 @@ contract Telephone {
 - Đây là một trong những lỗi bảo mật phổ biển của smart contract vì các dev thường hay nhầm lẫn giữa ``msg.sender`` và ``tx.origin``. Hậu quả của việc này thường là các cuộc phising attack.
 
 ## tx.origin và msg.sender
-Hai biến toàn cục này đôi khi thường vẫn gây phân vân cho solidity developer vì trong một số trường hợp nó trả về cùng một giá trị, như thế nhiều người sẽ mặc định rằng 2 biến này luôn cho về cùng một giá trị và hậu quả là dẫn đến một số lỗi khá quan trọng. Còn đây là định nghĩa của docs:
 
+Hai biến này khá khác nhau, mặc dù cùng trả về address nhưng tx.origin sẽ trả về địa chỉ của địa chỉ tạo ra transaction còn msg.sender sẽ trả về địa chỉ gọi đến message đó.
 > tx.origin (address): sender of the transaction (full call chain)
 
 > msg.sender (address): sender of the message (current call)
-
-Hai biến này khá khác nhau, mặc dù cùng trả về address nhưng tx.origin sẽ trả về địa chỉ của địa chỉ tạo ra transaction còn msg.sender sẽ trả về ịa chỉ gọi đến message đó  
 
 ![](https://miro.medium.com/v2/resize:fit:1200/1*Q_mcX4Po8JTKUS2yJhvcPQ.png)
 
